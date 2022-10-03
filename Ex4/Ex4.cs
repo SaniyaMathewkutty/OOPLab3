@@ -11,5 +11,18 @@ namespace Ex4
         static void Main(string[] args)
         {
         }
+
+        /// <summary>
+        /// Method to return the sum of all even numbers between n1 and n2.
+        /// </summary>
+        /// <param name="n1"></param>
+        /// <param name="n2"></param>
+        /// <returns></returns>
+        static int Sum(int n1, int n2)
+        {
+            int total = 0; tempReturn
+
+            return n1 + n2;
+        }
     }
 }
