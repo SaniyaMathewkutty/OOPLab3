@@ -23,11 +23,27 @@ namespace Ex5
             // Declare variables 
             int stock = 10, sales = 5;
 
-            Console.WriteLine("Stock at hand = {0}", stock);
+            if (UpdateStock(ref stock, sales))
+                Console.WriteLine("Sale successful. Sold {0}, stock remaining {1}", sales, stock);
+            else
+                Console.WriteLine("Inadequate amount of stock!");
         }
         
         static bool UpdateStock(ref int stock, int sales) // passing variable stock by reference
         {
+            // Return the bool true if stock at hand figure has been updated 
+            bool stockUpdated = false;
+
+            // check if there is enough stock to update with sale amount
+            if (stock >= sales)
+            {
+                stock -= sales; // decrease stock with the sales amount
+                stockUpdated = true;
+            }
+            else
+                stockUpdated = false;
+
+            return stockUpdated;
 
         }
     }
