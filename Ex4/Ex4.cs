@@ -10,10 +10,13 @@ namespace Ex4
     {
         static void Main(string[] args)
         {
+            Console.WriteLine(Sum(5, 20)); 
+            // Should print 104.
+            Console.ReadLine();
         }
 
         /// <summary>
-        /// Method to return the sum of all even numbers between n1 and n2.
+        /// Method that calculates the sum of all even numbers between n1 and n2.
         /// </summary>
         /// <param name="n1"></param>
         /// <param name="n2"></param>
@@ -32,8 +35,12 @@ namespace Ex4
 
             for (int i = n1; i <= n2; i++)
             {
-                if ( i % 2 == 0) // finding out which ones are even
+                if (i % 2 == 0) // finding out which ones are even
+                    total += i; // increment total by the number
             }
+
+
+            return total;
 
 
 
