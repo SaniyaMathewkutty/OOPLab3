@@ -10,7 +10,19 @@ namespace Ex1
     {
         static void Main(string[] args)
         {
+            // Declare variables
+            int age = 0;
 
+            // Get input from user
+            Console.WriteLine("Enter your age:  ");
+            age = int.Parse(Console.ReadLine());
+
+            if (AgeRestriction(age))
+                Console.WriteLine("You have access to the site.");
+            else
+                Console.WriteLine("You do not have access to the site.");
+
+            Console.ReadLine();
         }
 
         static bool AgeRestriction (int age)
