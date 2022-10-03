@@ -20,9 +20,24 @@ namespace Ex4
         /// <returns></returns>
         static int Sum(int n1, int n2)
         {
-            int total = 0; tempReturn
+            int total = 0, lowest = 0;
 
-            return n1 + n2;
+            // Determine that n1 (number 1) is the lowest number
+            if (n2 < n1)
+            {
+                lowest = n2;
+                n2 = n1;
+                n1 = lowest;
+            }
+
+            for (int i = n1; i <= n2; i++)
+            {
+                if ( i % 2 == 0) // finding out which ones are even
+            }
+
+
+
+            
         }
     }
 }
