@@ -21,15 +21,13 @@ namespace Ex3
             int[] array = { 1, 2, 3, 4 };
 
             // Display array elements before calling the method
-            for (int i = 0; i < array.Length; i++)
-                Console.WriteLine("Element {0} = {1}", i, array[i]);
+            DisplayArray(array);
 
             // Method call
             Zero(array);
 
             // Display elements after method called
-            for (int i = 0; i < array.Length; i++)
-                Console.WriteLine("Element {0} = {1}", i, array[i]);
+            DisplayArray(array);
 
             Console.ReadLine();
         }
@@ -44,6 +42,15 @@ namespace Ex3
             {
                 array[i] = 0;
             }
+        }
+        /// <summary>
+        /// Method to display all elements of the array.
+        /// </summary>
+        /// <param name="array"></param>
+        static void DisplayArray(int[] array)
+        {
+            for (int i = 0; i < array.Length; i++)
+                Console.WriteLine("Element {0} = {1}", i, array[i]);
         }
     }
 }
