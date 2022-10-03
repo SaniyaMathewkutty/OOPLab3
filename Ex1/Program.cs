@@ -10,6 +10,17 @@ namespace Ex1
     {
         static void Main(string[] args)
         {
+
+        }
+
+        static bool AgeRestriction (int age)
+        {
+            bool restrictAge = false; // initialise boolean variable to be returned
+
+            if (age >= 18 && age <= 21)
+                restrictAge = true;
+
+            return restrictAge;
         }
     }
 }
