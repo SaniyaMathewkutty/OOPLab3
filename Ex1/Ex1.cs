@@ -1,4 +1,14 @@
-﻿using System;
+﻿/*
+    Name: Saniya Mathewkutty  
+    Date: 03/10/2022
+    Description: Lab3 Ex1 - 
+
+    1. A website only allows users in the age bracket 18 to 21 inclusive to access
+    its content. Write a method that accepts the age as an int argument and decides
+    whether it is possible to access the site. Your method shall return a boolean
+    value
+*/
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
