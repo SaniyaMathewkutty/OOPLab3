@@ -40,8 +40,8 @@ namespace Ex5
                 stock -= sales; // decrease stock with the sales amount
                 stockUpdated = true;
             }
-            else
-                stockUpdated = false;
+
+            // don't need else statment to return stockUpdated as false because it's initialised to be false
 
             return stockUpdated;
 
