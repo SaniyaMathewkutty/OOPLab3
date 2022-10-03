@@ -15,7 +15,7 @@ namespace Ex6
         {
             // Initialise variables and arrays
 
-            int total; 
+            int total = 0; 
 
             int[,] movieReviews = new int[,]
             {
@@ -29,14 +29,22 @@ namespace Ex6
             // Loop to go through each row in array
             for (int i = 0; i < movieReviews.GetLength(0); i++)  // getlength(0} = number of rows in array
             {
-                total = 0;
                 // nested loop to go through each element in row of above loop
 
                 for (int j = 0; j < movieReviews.GetLength(1); j++)  //getlength(1) = number of coloumns in array
                 {
                     total += movieReviews[i, j];
                 }
+
+                averages[i] = (double)total / 3; // (double)total casts total to a double to make sure decimals are allowed
             }
+
+            foreach (double average in averages)
+            {
+                Console.WriteLine("Average is {0:F2}", average); // F2 formats to two decimals
+            }
+
+            Console.ReadLine();
 
         }
     }
