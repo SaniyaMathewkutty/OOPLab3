@@ -27,7 +27,7 @@ namespace Ex6
             double[] averages = new double[3];  // an array of the average rating for each film
 
             // Loop to go through each row in array
-            for (int i = 0; i < movieReviews.GetLength(0); i++)  // getlength(0} = number of rows in array
+            for (int i = 0; i < movieReviews.GetLength(0); i++)  // getlength(0) = number of rows in array
             {
                 // nested loop to go through each element in row of above loop
 
